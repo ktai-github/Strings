@@ -12,6 +12,8 @@ int main(int argc, const char * argv[]) {
   @autoreleasepool {
     NSString *name = @"Kevin";
     NSLog(@"name variable is %@", name);
+    NSUInteger nameLength = name.length;
+    NSLog(@"%@ length is %lu", name, nameLength);
   }
   return 0;
 }
