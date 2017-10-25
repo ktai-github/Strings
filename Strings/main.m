@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-    }
-    return 0;
+  @autoreleasepool {
+    NSString *name = @"Kevin";
+    NSLog(@"name variable is %@", name);
+  }
+  return 0;
 }
