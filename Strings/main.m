@@ -33,6 +33,22 @@ int main(int argc, const char * argv[]) {
     madLib = [madLib stringByReplacingOccurrencesOfString:@"_VERB_" withString:@"rain"];
     
     NSLog(@"%@", madLib);
+    
+    NSNumber *age = @38;
+    NSLog(@"%@", age);
+    
+    NSDate *now = [NSDate date];
+    NSLog(@"%@", now);
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+    formatter.dateFormat = @"yyyy-MM-dd";
+    NSDate *date = [formatter dateFromString:@"1979-04-14"];
+    NSTimeInterval dateseconds = [date timeIntervalSinceNow];
+    NSLog(@"birthdate %@ | in seconds from 1970 %f", date, dateseconds);
+    
+//    What else can you do with NSDate?
+//    find time interval since reference date 1/1/2001
+    
   }
   return 0;
 }
